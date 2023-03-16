@@ -1,6 +1,6 @@
-const stringLength = require('./main');
+const reverseString = require('./main');
 
-test('check if string is at least 1 char long and not longer than 10 char', () => {
-    const myString = 'hello';
-    expect(() => { stringLength(myString) }).not.toThrow();
+test('reverse a given string', () => {
+    expect(reverseString('hello')).toBe('olleh');
+    expect(reverseString('hello, ronnie')).toBe('einnor ,olleh');
 });
